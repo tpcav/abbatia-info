@@ -252,18 +252,26 @@
         }
 
         .image1 {
-          width: 100%;
+          width: 96%;
         }
 
         .icons {
           display: grid;
-          margin-left: -2px;
+          margin-left: 5px;
         }
 
         .icons img {
-          margin: 15px;
+          margin: 8px;
         }
 
+        .iconName {
+          width: 50px;
+          text-align: center;
+        }
+         
+        .iconTitle {
+          margin-top: -5px;
+        }
 
 
         @media only screen and (max-width: 650px) {
@@ -281,7 +289,7 @@
 
           #epk {
             margin-left: 75px;
-            margin-top: -325px;
+            margin-top: -300px;
             width: 80%;
             
           }
@@ -299,11 +307,11 @@
           }
 
           .icons {
-            margin-left: -10px;
+            margin-left: -5px;
           }
 
           .icons img {
-            margin: 20px;
+            margin: 8px;
           }
           
         }
@@ -313,31 +321,44 @@
 <body>
 
       <div class="icons">
-        <a href="index.html">
-          <img src="notepad.png">
-        </a>
-        
-        <a href="https://open.spotify.com/artist/5O3oZeVgM98weu0NlwTMuP">
-          <img src="cd.png">
-        </a>
-      
-        <a href="https://www.youtube.com/channel/UCU2hNAVpmdPuFH1RLJMSzqw">
-          <img src="cam.png">
-        </a>
-       
-        <a href="https://a2b2.org/">
-          <img src="a2b2icon.png">
-        </a>
-        <a href="photo1.html">
-          <img src="rides.png" class="image">
-        </a>
-        <a href="photo2.html">
-          <img src="h-backrooms.png" class="image">
-        </a>
 
-        <a href="photo3.html">
-          <img src="v-press.png" class="image">
-        </a>
+        <div class="iconName">
+          <a href="index.html">
+            <img src="notepad.png">
+            <p class="iconTitle">EPK</p>
+          </a>
+        </div>
+
+        
+        <div class="iconName">
+          <a href="https://open.spotify.com/artist/5O3oZeVgM98weu0NlwTMuP">
+            <img src="cd.png">
+            <p class="iconTitle">Spotify</p>
+          </a>
+        </div>
+
+        
+        <div class="iconName">
+          <a href="https://www.youtube.com/channel/UCU2hNAVpmdPuFH1RLJMSzqw">
+            <img src="cam.png">
+            <p class="iconTitle">YouTube</p>
+          </a>
+        </div>
+        
+        <div class="iconName">
+          <a href="https://a2b2.org/">
+            <img src="a2b2icon.png">
+            <p class="iconTitle">A2B2</p>
+          </a>
+        </div>
+        
+        <div class="iconName">
+          <a href="photos.html">
+            <img src="folder.png" class="image">
+            <p class="iconTitle">Photos</p>
+          </a>
+        </div>
+
       </div>
       
       <div id="epk" class="window">
@@ -350,28 +371,26 @@
             </div>
           </div>
           <div id="epk1" class="window-body">
-            <img src="h-backrooms.png" class="image1">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="h-backrooms.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="rides.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="h-many.png">
+                </div>
+                <div class="swiper-slide">
+                  <img src="v-press.png">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
-
-        <!-- Swiper
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="h-backrooms.png">
-            </div>
-            <div class="swiper-slide">
-              <img src="h-rides.png">
-            </div>
-            <div class="swiper-slide">
-              <img src="h-many.png">
-            </div>
-            <div class="swiper-slide">
-              <img src="v-press.png">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div> -->
 
         <!-- <div class="icons">
           <a href="#">
