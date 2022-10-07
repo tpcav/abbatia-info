@@ -2,6 +2,15 @@
   box-sizing: border-box;
 }
 
+html {
+  color: white;
+  background-image: url(darkroom.jpg);
+  width: 100%;
+  background-color: black;
+  overflow-x: hidden;
+  position: fixed;
+}
+
 /* Modal Styling */
 
 .modal {
@@ -57,6 +66,8 @@
   background: none;
   box-shadow: none;
   font-size: 10;
+  color: white;
+  margin-top: 20px;
 }
 
 .sections {
