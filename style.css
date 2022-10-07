@@ -22,11 +22,9 @@ html {
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
-  width: 400px;
-  max-width: 90%;
+  width: 90%;
+  max-width: 80%;
   z-index: 0;
-  display: inline-block;
-
 }
 
 .modal.active {
@@ -158,6 +156,7 @@ html {
 }
 
 .swiper {
+  width: 60vw;
 }
 
 .swiper-slide {
