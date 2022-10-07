@@ -204,7 +204,3 @@ html {
   transform: translate(-30%, -50%) scale(1);
   box-shadow: inset;
 }
-
-li {
-  display: block;
-}
