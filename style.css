@@ -29,7 +29,7 @@ html {
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
-  margin-top: -45px;
+  margin-top: -35px;
   z-index: 1;
 }
 
@@ -74,7 +74,7 @@ html {
 }
 
 .sections {
-  font-size: 10pt;
+  font-size: 8pt;
   font-weight: 800;
 }
 
@@ -204,4 +204,8 @@ html {
   left: 50%;
   transform: translate(-30%, -50%) scale(1);
   box-shadow: inset;
+}
+
+p {
+  font-size: 8pt;
 }
