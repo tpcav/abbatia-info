@@ -1,7 +1,9 @@
+// DOM Selectors
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
+// Open Modal Button Loop
 openModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     const modal = document.querySelector(button.dataset.modalTarget)
@@ -9,6 +11,7 @@ openModalButtons.forEach(button => {
   })
 })
 
+// Close Modal Button Loop
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     const modal = button.closest('.modal')
@@ -16,19 +19,31 @@ closeModalButtons.forEach(button => {
   })
 })
 
+// Open Modal Function
 function openModal(modal) {
   if (modal == null) return
   modal.classList.add('active')
 
 }
 
-function maximizeWindow(modal) {
-  if (modal == null) return
-  modal.classList.add('maximize')
-}
-
+// Close Modal Function
 function closeModal(modal) {
   if (modal == null) return
   modal.classList.remove('active')
   
 }
+
+
+// Swiper JS 
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

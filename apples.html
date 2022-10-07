@@ -7,6 +7,7 @@
     <title>EPK Final</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
   
   </head>
@@ -14,6 +15,22 @@
     <button data-modal-target="#modal" class="icons">
       <img src="notepad.png">
       <p>EPK</p>
+    </button>
+    <button data-modal-target="#modal1" class="icons">
+      <img src="folder.png">
+      <p>Photos</p>
+    </button>
+    <button data-modal-target="#modal2" class="icons">
+      <img src="cam.png">
+      <p>Videos</p>
+    </button>
+    <button data-modal-target="#modal3" class="icons">
+      <img src="cd.png">
+      <p>Spotify</p>
+    </button>
+    <button data-modal-target="#modal4" class="icons">
+      <img src="a2b2icon.png">
+      <p>a2b2.org</p>
     </button>
 
     <audio control hidden autoplay>
@@ -24,33 +41,98 @@
     
     
 
-    <div class="modal" id="modal">
-      <div class="window">
-        <div class="title-bar">
-          <div class="title-bar-text">EPK</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button data-modal-target="#modal" aria-label="Maximize"></button>
-            <button data-close-button class="close-button" aria-label="Close">&times;</button>
-          </div>
+<div class="modal" id="modal">
+  <div class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">EPK</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button data-close-button class="close-button" aria-label="Close">&times;</button>
+      </div>
+    </div>
+    <div class="window-body">
+        <p class="sections">About</p>
+        <p>Consisting of Jazz Vicaris, Syd Solanke, & Droogie</p>
+        <p><a href="https://linktr.ee/abbatia">ABBATIA</a> is a 3-piece rap group from Philly, with a hardcore hip-hop sound reminiscent of City Morgue, Death Grips, Ho99o9 but with pop-leaning tracks that have been described as “horror-core Outkast”.</p>
+        <p>The guys are lifelong best friends in their early 20s, bonded by a love for diverse genres of music, manga / anime, sci-fi, and <a href="https://en.wikipedia.org/wiki/Creepypasta">creepypasta.</a></p>
+        
+        <p class="sections">Production</p>
+        <p>100% of the music production and visuals are done in-house by Syd and Droogie (respectively). Droogie, who handles the visuals, has also done animation and live visuals for artists like Toro y Moi and Daedelus.</p>
+        
+        <p class="sections">Recent Updates</p>
+        <p>Their next 6-song EP, Red Room, is out in September on <a href="https://a2b2.org/">A2B2</a> - a <a href="https://www.instagram.com/a2b2records/">label</a> recently launched by <a href="https://www.instagram.com/andy_morin/">Andy Morin</a>(Flatlander of Death Grips). ABBATIA is the label's 2nd signing. Andy discovered them in the <a href="https://discord.com/invite/a2b2">A2B2 Discord</a> community and quickly became addicted to bumping their tracks while driving through LA.</p>
+        
+        <p class="sections">New EP</p>
+        <p>Standout tracks from the EP include the mosh-pit-inducing “Dreadnaught”; the creepy, face-melting “World Wide Web”, and the ghostly club pop track “System Failure”. These 3 tracks can be found <a href="#">here.</a></p>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" id="modal1">
+    <div class="window" id="photoWindow">
+      <div class="title-bar">
+        <div class="title-bar-text">Working</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button data-close-button class="close-button" aria-label="Close">&times;</button>
         </div>
-        <div class="window-body">
-            <p class="sections">About</p>
-            <p>Consisting of Jazz Vicaris, Syd Solanke, & Droogie</p>
-            <p><a href="https://linktr.ee/abbatia">ABBATIA</a> is a 3-piece rap group from Philly, with a hardcore hip-hop sound reminiscent of City Morgue, Death Grips, Ho99o9 but with pop-leaning tracks that have been described as “horror-core Outkast”.</p>
-            <p>The guys are lifelong best friends in their early 20s, bonded by a love for diverse genres of music, manga / anime, sci-fi, and <a href="https://en.wikipedia.org/wiki/Creepypasta">creepypasta.</a></p>
-            
-            <p class="sections">Production</p>
-            <p>100% of the music production and visuals are done in-house by Syd and Droogie (respectively). Droogie, who handles the visuals, has also done animation and live visuals for artists like Toro y Moi and Daedelus.</p>
-            
-            <p class="sections">Recent Updates</p>
-            <p>Their next 6-song EP, Red Room, is out in September on <a href="https://a2b2.org/">A2B2</a> - a <a href="https://www.instagram.com/a2b2records/">label</a> recently launched by <a href="https://www.instagram.com/andy_morin/">Andy Morin</a>(Flatlander of Death Grips). ABBATIA is the label's 2nd signing. Andy discovered them in the <a href="https://discord.com/invite/a2b2">A2B2 Discord</a> community and quickly became addicted to bumping their tracks while driving through LA.</p>
-            
-            <p class="sections">New EP</p>
-            <p>Standout tracks from the EP include the mosh-pit-inducing “Dreadnaught”; the creepy, face-melting “World Wide Web”, and the ghostly club pop track “System Failure”. These 3 tracks can be found <a href="#">here.</a></p>
+      </div>
+      <div class="window-body">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="epkPress-8.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="epkPress-7.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="epkPress-6.jpg">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="window" id="photoWindow">
+      <div class="title-bar">
+        <div class="title-bar-text">Working</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button data-close-button class="close-button" aria-label="Close">&times;</button>
+        </div>
+      </div>
+      <div class="window-body">
+
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <iframe width="575" height="475" src="https://www.youtube.com/embed/q11-bDCZ8rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="575" height="475" src="https://www.youtube.com/embed/D2o0nF-0p5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="575" height="475" src="https://www.youtube.com/embed/72Wm3KNiq00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
 
     <!-- Start Bar(Fixed Footer) -->
     <div class="footer">
@@ -76,6 +158,10 @@
 
   
     <script defer src="script.js"></script>
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
   </body>
   
   </html>
