@@ -146,6 +146,7 @@ html {
 
 .footer {
   position: fixed;
+  display: inline-block;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -180,7 +181,8 @@ html {
 }
 
 .mediaPlayer {
-  height: 10px;
+  height: 30px;
+  width: 250px;
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -196,4 +198,12 @@ html {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  position: fixed;
+  top: 97%;
+  left: 50%;
+  transform: translate(-30%, -50%) scale(1);
+}
+
+li {
+  display: block;
 }
