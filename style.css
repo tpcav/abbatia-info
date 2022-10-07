@@ -17,19 +17,19 @@ html {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0.01);
   transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
   width: 500px;
   max-width: 80%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
-  z-index: 0;
+  z-index: 1;
 }
 
 .modal-header .close-button {
@@ -177,7 +177,6 @@ html {
 .swiper-slide img {
   display: block;
   width: 100%;
-  object-fit: cover;
 }
 
 .mediaPlayer {
