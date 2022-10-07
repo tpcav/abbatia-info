@@ -9,13 +9,6 @@ openModalButtons.forEach(button => {
   })
 })
 
-maximizeWindowButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    maximizeWindow(modal)
-  })
-})
-
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     const modal = button.closest('.modal')
