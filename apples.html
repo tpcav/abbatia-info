@@ -24,14 +24,16 @@
       <img src="cam.png">
       <p>Videos</p>
     </button>
-    <button data-modal-target="#modal3" class="icons">
+    <button src="" class="icons">
       <img src="cd.png">
       <p>Spotify</p>
     </button>
-    <button data-modal-target="#modal4" class="icons">
-      <img src="a2b2icon.png">
-      <p>a2b2.org</p>
-    </button>
+    <a href="https://a2b2.org/">
+      <button class="icons">
+        <img src="a2b2icon.png">
+        <p>a2b2.org</p>
+      </button>
+    </a>
 
     <audio control hidden autoplay>
       <source src="site.ogg" type="audio/ogg">
@@ -94,6 +96,36 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal3">
+      <div class="window" id="photoWindow">
+        <div class="title-bar">
+          <div class="title-bar-text">Working</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button data-close-button class="close-button" aria-label="Close">&times;</button>
+          </div>
+        </div>
+        <div class="window-body">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="epkPress-8.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="epkPress-7.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="epkPress-6.jpg">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </div>
