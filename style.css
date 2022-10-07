@@ -29,6 +29,7 @@ html {
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
+  margin-top: -40x;
   z-index: 1;
 }
 
