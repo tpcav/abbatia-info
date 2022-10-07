@@ -24,7 +24,7 @@
           <div class="title-bar-text">EPK</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
+            <button data-modal-target="#modal" aria-label="Maximize"></button>
             <button data-close-button class="close-button" aria-label="Close">&times;</button>
           </div>
         </div>
@@ -42,6 +42,28 @@
             
             <p class="sections">New EP</p>
             <p>Standout tracks from the EP include the mosh-pit-inducing “Dreadnaught”; the creepy, face-melting “World Wide Web”, and the ghostly club pop track “System Failure”. These 3 tracks can be found <a href="#">here.</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Bar(Fixed Footer) -->
+    <div class="footer">
+      <div class="window">
+        <div class="window-body">
+          <!-- Start Menu Pop-up -->
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="start.png" class="starticon" width="22%">
+              Start
+            </button>
+            <div class="dropdown-content">
+              <a href="reader.html">Reader</a>
+              <a href="#">Help</a>
+              <a href="index.html">Close menu</a>
+            </div>
+          </div>  
+          <div id="clockDisplay" class="clock"></div> 
+          <!-- <a href="#"><img src="notepad.png" class="nptaskbar" width="20px"> -->
         </div>
       </div>
     </div>
