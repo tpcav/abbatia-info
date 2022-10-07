@@ -25,6 +25,8 @@ html {
   width: 500px;
   max-width: 80%;
   z-index: 0;
+  display: inline-block;
+
 }
 
 .modal.active {
