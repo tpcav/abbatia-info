@@ -17,7 +17,7 @@ html {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.01);
+  transform: translate(-50%, 100%) scale(0.0001);
   transition: 200ms ease-in-out;
   border: 1px solid black;
   border-radius: 10px;
