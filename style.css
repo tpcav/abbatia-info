@@ -19,11 +19,7 @@ html {
   left: 50%;
   transform: translate(-50%, 100%) scale(0.0001);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
   border-radius: 10px;
-  background-color: white;
-  width: 90%;
-  max-width: 80%;
   z-index: 0;
 }
 
@@ -32,16 +28,6 @@ html {
   z-index: 1;
 }
 
-.modal-header .close-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.modal-body {
-  padding: 10px 15px;
-}
 
 #overlay {
   position: fixed;
@@ -208,4 +194,43 @@ html {
 
 p {
   font-size: 8pt;
+}
+
+.swiperButtons {
+  position: relative;
+  margin: 50px;
+  padding-bottom: 5px;
+  z-index: 1000;
+}
+
+@media (orientation: landscape) {
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%) scale(0.0001);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 0;
+  }
+
+  #modal {
+    width: 50%;
+  }
+}
+
+@media (orientation: portrait) {
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%) scale(0.0001);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 0;
+  }
+
+  #modal {
+    width: 80vw;
+  }
 }
