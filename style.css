@@ -205,7 +205,7 @@ p {
 
 @media (orientation: landscape) {
   .modal {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 100%) scale(0.0001);
@@ -230,7 +230,7 @@ p {
 
 @media (orientation: portrait) {
   .modal {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 100%) scale(0.0001);
