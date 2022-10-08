@@ -1,3 +1,9 @@
+// core version + navigation, pagination modules:
+import Swiper, { Navigation, Pagination } from 'swiper';
+
+// configure Swiper to use modules
+Swiper.use([Navigation, Pagination]);
+
 // DOM Selectors
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
@@ -34,8 +40,16 @@ function closeModal(modal) {
 }
 
 
-// Swiper JS 
 var swiper = new Swiper(".mySwiper", {
+  loop: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+// Swiper JS 
+var swiper1 = new Swiper(".mySwiper1", {
   loop: true,
 
   pagination: {
@@ -45,13 +59,5 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-});
-
-var swiper = new Swiper(".mySwiper", {
-  loop: true,
-
-  pagination: {
-    el: ".swiper-pagination",
   },
 });
