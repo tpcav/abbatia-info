@@ -6,17 +6,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABBATIA</title>
 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
   <style>
 
     html {
       background-color: black;
-      color: white;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    
-    iframe {
+
+    body {
+      margin: 50px;
+    }
+  
+
+    h1 {
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    p {
+      color: gray;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
       border-radius: 1.2rem;
-      margin-top: 1.5rem;;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.2rem;
+    }
+
+    .swiper-slide iframe {
+      border-radius: 0.75rem;
+    }
+
+    .pressLink {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      padding: 0.75rem;
+      border-radius: 0.75rem;
+      font-size: 5rem;
+      width: 90%;
+      display: none;
+    }
+    
+
+    @media (orientation: portrait) {
+
+      .swiper {
+        margin-left: -50px;
+        width: 100vw;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        border-radius: 1.2rem;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.75rem;
+      }
+
+      .swiper-slide iframe {
+        display: block;
+        width: 100%;
+        height: 250px;
+        border-radius: 0.75rem;
+      }
     }
 
   </style>
@@ -25,6 +136,7 @@
 
   <h1>ABBATIA</h1>
 
+  <br>
   
   <h2>
     <a href="#">About</a>
@@ -33,20 +145,90 @@
     Consisting of Jazz Vicaris, Syd Solanke, & Droogie
     ABBATIA is a 3-piece rap group from Philly, with an industrial hip-hop sound reminiscent of City Morgue, Death Grips and Aphex Twin, but with a pop-leaning flavor that have been described as “horror-core Outkast”. These boys are lifelong best friends in their early 20s, bonded by a deep love for the niche worlds of music, manga, video games and film. The blood tinged vocals, along with Syd’s cutthroat digital drums and bass, create an onslaught of violent character on any given track.
   </p>
+
+  <br>
+
   <h2>
-    <a href="#">Links</a>
+    <a href="#">Photos</a>
   </h2>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="clay.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="clay-3.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="clay-2.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="clay.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="clay.jpg">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
   
+  <br>
+  <br>
 
   <div class="musicVideos">
     <h2>
       <a href="#">Recent Music Videos</a>
     </h2> 
     <p>100% of the music production and visuals are done in-house by Syd and Droogie (respectively). While Jazz forges the hooky structural mesh that makes these tracks as addictive as they are abrasive. Droogie has also done music videos and live visuals for artists like Toro y Moi and Daedelus. All of these respective skills construct a powerhouse for self-made media, that feels as if it’s coming from a monolithic cult.</p>
-    <iframe width= "100%" height="400" src="https://www.youtube.com/embed/Ch8yqUfWxVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width= "100%" height="400" src="https://www.youtube.com/embed/q11-bDCZ8rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width= "100%" height="400" src="https://www.youtube.com/embed/D2o0nF-0p5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <!-- Swiper -->
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <iframe width= "100%" height="500" src="https://www.youtube.com/embed/Ch8yqUfWxVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+          <iframe width= "100%" height="500" src="https://www.youtube.com/embed/q11-bDCZ8rA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+          <iframe width= "100%" height="500" src="https://www.youtube.com/embed/D2o0nF-0p5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper1 = new Swiper(".mySwiper1", {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
   
 </body>
 </html>
